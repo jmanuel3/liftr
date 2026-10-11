@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"LIFTR","url":"https://liftr-7u9.pages.dev/","applicationCategory":"HealthApplication","operatingSystem":"Any (PWA)","browserRequirements":"Requires JavaScript","description":"Strength & hypertrophy tracker with smart progression, workout mode, rest timer and progress dashboard.","inLanguage":"es","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Person","name":"Jose"}}
+{"@context":"https://schema.org","@type":"WebApplication","name":"LIFTR","url":"https://liftr-7u9.pages.dev/","applicationCategory":"HealthApplication","operatingSystem":"Any (PWA)","browserRequirements":"Requires JavaScript","description":"Strength & hypertrophy tracker with smart progression, workout mode, rest timer and progress dashboard.","inLanguage":"es","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Person","name":"Jose","url":"https://github.com/jmanuel3"},"codeRepository":"https://github.com/jmanuel3/liftr"}
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inconsolata:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inconsolata:wght@400;500;600;700&display=swap"></noscript>
@@ -185,10 +185,11 @@
   .page-header { margin-bottom: 24px; }
 
   .page-header h1 {
-    font-size: clamp(28px, 8vw, 50px);
+    font-size: clamp(24px, 8vw, 50px);
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1;
+    overflow-wrap: break-word;
   }
 
   .page-header h1 em { font-style: normal; color: var(--accent); }
@@ -1086,6 +1087,8 @@
   /* ── FOOTER ── */
   .site-footer { max-width: 960px; margin: 0 auto; padding: 8px 16px calc(96px + env(safe-area-inset-bottom, 0px)); display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; font-family: 'Inconsolata', monospace; font-size: 11px; color: var(--muted); text-align: center; }
   .site-footer strong { color: var(--accent); letter-spacing: 2px; }
+  .site-footer a { color: var(--accent); text-decoration: none; padding: 4px 0; }
+  .site-footer a:hover { text-decoration: underline; }
   body.timer-open .site-footer { padding-bottom: calc(var(--timer-h, 170px) + 24px); }
   /* ── HISTORIAL ── */
   .hist-details { margin: -2px 0 10px; }
@@ -2227,6 +2230,7 @@
   <span><strong>LIFTR</strong> v<span id="app-version">2.1</span></span>
   <span>Hecho por Jose · HTML, CSS &amp; JavaScript vanilla · PWA</span>
   <span>🔒 Tus datos se guardan solo en este dispositivo</span>
+  <a href="https://github.com/jmanuel3/liftr" target="_blank" rel="noopener">Código en GitHub ↗</a>
 </footer>
 
 <div class="saved-toast" id="toast">✓ Guardado</div>
